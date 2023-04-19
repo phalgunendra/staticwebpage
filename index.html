@@ -14,6 +14,20 @@ body {
 img {
     max-width: 100%;
 }
+.navbar {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.6));
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  .bg-mixed-color {
+    background-color: transparent !important;
+  }
+
+  
+  
 
 #cover {
     background: #222 url('https://78.media.tumblr.com/04e239e988c57c7197427f9ce4f5eef1/tumblr_p9pmy5obTR1xvzbeyo3_1280.jpg') center center no-repeat;
@@ -70,6 +84,80 @@ img {
     font-size: 0.8rem;
     padding: 2.5rem 0;
 }
+
+
+#cover {
+    background: url(https://images.unsplash.com/photo-1499951360446-9832b2d7e84d) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+#cover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+#cover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    animation: color-change 20s ease-in-out infinite;
+}
+
+@keyframes color-change {
+    0% { background-color: #FFC0CB; }
+    50% { background-color: #87CEEB; }
+    100% { background-color: #FFDAB9; }
+}
+
+#cover-caption {
+    position: relative;
+    z-index: 1;
+}
+
+#cover-caption h1, #cover-caption p {
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px #333;
+}
+
+#cover-caption h1 {
+    margin-top: 10%;
+    font-size: 4rem;
+}
+
+#cover-caption p {
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+}
+
+  #cover-caption h1.display-3 {
+    color: #971818;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgb(20 19 19);
+    letter-spacing: 2px;
+}    
+#cover-caption p.display-3 {
+    color: #971818;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgb(20 19 19);
+    letter-spacing: 2px;
+}  
         </style>
     
         <!-- Bootstrap CSS -->
@@ -92,7 +180,7 @@ img {
         </section>
         <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark navbar-full" id="nav-main">
             <a class="navbar-brand" href="#">
-        <img src="<a data-flickr-embed="true" data-header="true"  href="https://www.flickr.com/photos/110170416@N07/42392091701/in/dateposted/" title=""><img id="brand-logo" src="https://farm2.staticflickr.com/1738/42392091701_b786d7c417_t.jpg" width="89" height="100" alt="FC_Logo1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> 
+        <img src="<a data-flickr-embed="true" data-header="true"  href="/" title=""><img id="brand-logo" src="https://farm2.staticflickr.com/1738/42392091701_b786d7c417_t.jpg" width="89" height="100" alt="FC_Logo1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> 
       </a>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -139,9 +227,9 @@ img {
                      <p class="lead">Below are photos of websites & pages that I have created so far.</p>
     
                      <div class="row">
-                         <div class="col-sm-12">
-                             <div class="card-group">
-                                 <div class="card">
+                         <div class="col-sm-12" >
+                             <div class="card-group" style="margin-left: 5px;">
+                                 <div class="card" style="    margin-right: 20px;">
                                      <div class="card-header">
                                          <h4 class="card-title">Build A Tribute Page Project</h4>
                                          <h6 class="card-subtitle">A Tribute to Audrey Hepburn an American Actress</h6>
@@ -152,7 +240,7 @@ img {
                                      </div>
                                  </div>
     
-                                 <div class="card">
+                                 <div class="card" style="    margin-right: 20px;">
                                      <div class="card-header">
                                          <h4 class="card-title">DuceCorona Bar-B-Que</h4>
                                          <h6 class="card-subtitle">The Home Page</h6>
@@ -163,7 +251,7 @@ img {
                                      </div>
                                  </div>
     
-                                 <div class="card">
+                                 <div class="card" style="    margin-right: 20px;">
                                      <div class="card-header">
                                          <h4 class="card-title">DuceCorona Bar-B-Que</h4>
                                          <h6 class="card-subtitle">Bar-B-Que Events</h6>
@@ -173,7 +261,7 @@ img {
                                          <p class="card-text">This is a photo of the Bar-B-Que Events Section of the Home Page.</p>
                                      </div>
                                  </div>
-                               <div class="card">
+                               <div class="card" style="    margin-right: 20px;">
                                      <div class="card-header">
                                          <h4 class="card-title">DuceCorona Bar-B-Que</h4>
                                          <h6 class="card-subtitle">Your Bar-B-Que Master</h6>
@@ -185,10 +273,10 @@ img {
                                  </div>                           
                              </div>
                          </div>
-                       <div class="row">
-                         <div class="col-sm-12">
+                       <div class="row" >
+                         <div class="col-sm-12" style="margin-top: 21px;">
                              <div class="card-group">
-                                 <div class="card">
+                                 <div class="card" style="    margin-right: 20px;">
                                      <div class="card-header">
                                          <h4 class="card-title">DuceCorona Bar-B-Que</h4>
                                          <h6 class="card-subtitle">Testimonials</h6>
@@ -199,7 +287,7 @@ img {
                                      </div>
                                  </div>
     
-                                 <div class="card">
+                                 <div class="card" style="    margin-right: 20px;">
                                      <div class="card-header">
                                          <h4 class="card-title">DuceCorona Bar-B-Que</h4>
                                          <h6 class="card-subtitle">The Footer</h6>
@@ -210,7 +298,7 @@ img {
                                      </div>
                                  </div>
     
-                                 <div class="card">
+                                 <div class="card" style="    margin-right: 20px;">
                                      <div class="card-header">
                                          <h4 class="card-title">DuceCorona Bar-B-Que</h4>
                                          <h6 class="card-subtitle">Blog Page</h6>
@@ -220,7 +308,7 @@ img {
                                          <p class="card-text">This is a photo of the Blog Page of the website.</p>
                                      </div>
                                  </div>
-                               <div class="card">
+                               <div class="card" style="    margin-right: 20px;">
                                      <div class="card-header">
                                          <h4 class="card-title">DuceCorona Bar-B-Que</h4>
                                          <h6 class="card-subtitle">Contact Page</h6>
